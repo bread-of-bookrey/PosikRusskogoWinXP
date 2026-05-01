@@ -14,5 +14,10 @@ namespace PoiskRusskogoXP
         {
             InitializeComponent();
         }
+
+        public void СhooseFileButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

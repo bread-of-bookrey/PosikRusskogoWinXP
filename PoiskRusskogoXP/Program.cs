@@ -14,7 +14,14 @@ namespace PoiskRusskogoXP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+
+            // FileSearcher activisation
+            MainForm mainForm = new MainForm();
+            Controller.FileSearcher fileSearcher = new Controller.FileSearcher();
+            mainForm.СhooseFileButton.Click += fileSearcher.GetChosenFileText;
+
+
+            Application.Run(mainForm);
         }
     }
 }

@@ -41,6 +41,7 @@
             resources.ApplyResources(this.СhooseFileButton, "СhooseFileButton");
             this.СhooseFileButton.Name = "СhooseFileButton";
             this.СhooseFileButton.UseVisualStyleBackColor = false;
+            this.СhooseFileButton.Click += new System.EventHandler(this.СhooseFileButton_Click);
             // 
             // FilePathLabel
             // 
@@ -79,10 +80,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button СhooseFileButton;
-        private System.Windows.Forms.Label FilePathLabel;
-        private System.Windows.Forms.Label LabelLogWindow;
-        private System.Windows.Forms.Button AutoCorrectButton;
+        public System.Windows.Forms.Button СhooseFileButton;
+        public System.Windows.Forms.Label FilePathLabel;
+        public System.Windows.Forms.Label LabelLogWindow;
+        public System.Windows.Forms.Button AutoCorrectButton;
     }
 }
 
