@@ -40,9 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\EncodingDetector.cs" />
     <Compile Include="Controller\FileSearcher.cs" />
     <Compile Include="Controller\LogManager.cs" />
     <Compile Include="Controller\PathShowerManager.cs" />
+    <Compile Include="Model\RusCharAnalizer.cs" />
     <Compile Include="View\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,9 +78,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Assets\OiskRusskogoICON.ico" />
   </ItemGroup>
