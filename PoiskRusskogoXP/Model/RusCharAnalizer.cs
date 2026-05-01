@@ -5,6 +5,7 @@ using System.IO;
 using static System.Windows.Forms.LinkLabel;
 using System.CodeDom;
 using PoiskRusskogoXP.Controller;
+using System.Windows.Forms;
 
 namespace PoiskRusskogoXP.Model
 {
@@ -13,11 +14,18 @@ namespace PoiskRusskogoXP.Model
         public List<string> PurifiedText;
         public string PurifiedFileName;
         public LogManager LogManag;
+        public Button AutoCorrectButton;
+        private bool isAnalCompleted;
 
-        public RusCharAnalizer(LogManager logManager)
+        public RusCharAnalizer(LogManager logManager, Button autoCorrectBtn)
         {
             PurifiedText = new List<string>();
             this.LogManag = logManager;
+            AutoCorrectButton = autoCorrectBtn;
+
+            isAnalCompleted = false;
+
+            this.AutoCorrectButton.Click += new EventHandler(this.SavePurifiedText);
         }
 
         public void Analize(string[] text)
@@ -52,8 +60,9 @@ namespace PoiskRusskogoXP.Model
                 Console.WriteLine();
             }
 
+            isAnalCompleted = true;
+            LogManag.WriteMessage("Анализ завершён.");
             LogManag.WriteMessage($"Русских символов найдено:    {cnt}");
-            SavePurifiedText();
         }
 
         public void UpdatePath(string fileName)
@@ -65,9 +74,17 @@ namespace PoiskRusskogoXP.Model
 
         }
 
-        public void SavePurifiedText()
+        public void SavePurifiedText(object sender, EventArgs e)
         {
-            File.WriteAllLines(PurifiedFileName, PurifiedText.ToArray());
+            if (isAnalCompleted)
+            {
+                File.WriteAllLines(PurifiedFileName, PurifiedText.ToArray());
+                LogManag.WriteMessage("Отредактированный файл сохранён в папке с оригиналом.");
+            }
+            else
+            {
+                LogManag.WriteMessage("Сначала выберите файл для коррекции!");
+            }
         }
     }
 }

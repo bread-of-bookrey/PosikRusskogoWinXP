@@ -25,7 +25,7 @@ namespace PoiskRusskogoXP
             Controller.LogManager logManager = new Controller.LogManager(mainForm.LogWindow);
             Controller.PathShowerManager pathShowerManager = new Controller.PathShowerManager(mainForm.PathShower);
 
-            Model.RusCharAnalizer rusCharAnalizer = new Model.RusCharAnalizer(logManager);
+            Model.RusCharAnalizer rusCharAnalizer = new Model.RusCharAnalizer(logManager, mainForm.AutoCorrectButton);
 
             Controller.FileSearcher fileSearcher = new Controller.FileSearcher(logManager, pathShowerManager, rusCharAnalizer);
             mainForm.СhooseFileButton.Click += fileSearcher.GetChosenFileText;

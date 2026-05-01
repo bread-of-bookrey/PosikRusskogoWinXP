@@ -14,7 +14,7 @@ namespace PoiskRusskogoXP.Controller
         public LogManager(TextBox logWindow)
         {
             this.logWindow = logWindow;
-            WriteMessage("Ожидание...");
+            WriteMessage("Ожидание выбора файла...");
       
         }
 
