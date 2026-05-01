@@ -4,6 +4,7 @@ using System.Text;
 using System.IO;
 using static System.Windows.Forms.LinkLabel;
 using System.CodeDom;
+using PoiskRusskogoXP.Controller;
 
 namespace PoiskRusskogoXP.Model
 {
@@ -11,10 +12,12 @@ namespace PoiskRusskogoXP.Model
     {
         public List<string> PurifiedText;
         public string PurifiedFileName;
+        public LogManager LogManag;
 
-        public RusCharAnalizer()
+        public RusCharAnalizer(LogManager logManager)
         {
             PurifiedText = new List<string>();
+            this.LogManag = logManager;
         }
 
         public void Analize(string[] text)
@@ -49,7 +52,7 @@ namespace PoiskRusskogoXP.Model
                 Console.WriteLine();
             }
 
-            Console.WriteLine($"Русских символов найдено:    {cnt}");
+            LogManag.WriteMessage($"Русских символов найдено:    {cnt}");
             SavePurifiedText();
         }
 

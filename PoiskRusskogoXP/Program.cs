@@ -22,10 +22,10 @@ namespace PoiskRusskogoXP
             // Init
             MainForm mainForm = new MainForm();
 
-            Model.RusCharAnalizer rusCharAnalizer = new Model.RusCharAnalizer();
-
             Controller.LogManager logManager = new Controller.LogManager(mainForm.LogWindow);
             Controller.PathShowerManager pathShowerManager = new Controller.PathShowerManager(mainForm.PathShower);
+
+            Model.RusCharAnalizer rusCharAnalizer = new Model.RusCharAnalizer(logManager);
 
             Controller.FileSearcher fileSearcher = new Controller.FileSearcher(logManager, pathShowerManager, rusCharAnalizer);
             mainForm.СhooseFileButton.Click += fileSearcher.GetChosenFileText;
