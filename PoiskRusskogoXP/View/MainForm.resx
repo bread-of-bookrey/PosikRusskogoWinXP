@@ -143,30 +143,6 @@
   <data name="&gt;&gt;СhooseFileButton.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="FilePathLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 56</value>
-  </data>
-  <data name="FilePathLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>360, 45</value>
-  </data>
-  <data name="FilePathLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="FilePathLabel.Text" xml:space="preserve">
-    <value>Путь к файлу</value>
-  </data>
-  <data name="&gt;&gt;FilePathLabel.Name" xml:space="preserve">
-    <value>FilePathLabel</value>
-  </data>
-  <data name="&gt;&gt;FilePathLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FilePathLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;FilePathLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="AutoCorrectButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>62, 296</value>
   </data>
@@ -189,10 +165,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;AutoCorrectButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <data name="LogWindow.Font" type="System.Drawing.Font, System.Drawing">
+    <value>ГОСТ тип А, 12pt</value>
   </data>
   <data name="LogWindow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 104</value>
+    <value>20, 97</value>
   </data>
   <data name="LogWindow.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -213,6 +192,30 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;LogWindow.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PathShower.Font" type="System.Drawing.Font, System.Drawing">
+    <value>ГОСТ тип А, 12pt</value>
+  </data>
+  <data name="PathShower.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 59</value>
+  </data>
+  <data name="PathShower.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 32</value>
+  </data>
+  <data name="PathShower.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;PathShower.Name" xml:space="preserve">
+    <value>PathShower</value>
+  </data>
+  <data name="&gt;&gt;PathShower.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PathShower.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PathShower.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

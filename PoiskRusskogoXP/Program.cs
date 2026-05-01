@@ -19,8 +19,9 @@ namespace PoiskRusskogoXP
             MainForm mainForm = new MainForm();
 
             Controller.LogManager logManager = new Controller.LogManager(mainForm.LogWindow);
+            Controller.PathShowerManager pathShowerManager = new Controller.PathShowerManager(mainForm.PathShower);
 
-            Controller.FileSearcher fileSearcher = new Controller.FileSearcher(logManager);
+            Controller.FileSearcher fileSearcher = new Controller.FileSearcher(logManager, pathShowerManager);
             mainForm.СhooseFileButton.Click += fileSearcher.GetChosenFileText;
 
 

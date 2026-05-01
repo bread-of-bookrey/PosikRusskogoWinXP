@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.СhooseFileButton = new System.Windows.Forms.Button();
-            this.FilePathLabel = new System.Windows.Forms.Label();
             this.AutoCorrectButton = new System.Windows.Forms.Button();
             this.LogWindow = new System.Windows.Forms.TextBox();
+            this.PathShower = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // СhooseFileButton
@@ -43,14 +43,6 @@
             this.СhooseFileButton.UseVisualStyleBackColor = false;
             this.СhooseFileButton.Click += new System.EventHandler(this.СhooseFileButton_Click);
             // 
-            // FilePathLabel
-            // 
-            this.FilePathLabel.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.FilePathLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            resources.ApplyResources(this.FilePathLabel, "FilePathLabel");
-            this.FilePathLabel.Name = "FilePathLabel";
-            this.FilePathLabel.Click += new System.EventHandler(this.FilePathLabel_Click);
-            // 
             // AutoCorrectButton
             // 
             resources.ApplyResources(this.AutoCorrectButton, "AutoCorrectButton");
@@ -60,19 +52,25 @@
             // LogWindow
             // 
             this.LogWindow.BackColor = System.Drawing.SystemColors.MenuText;
-            this.LogWindow.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             resources.ApplyResources(this.LogWindow, "LogWindow");
+            this.LogWindow.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.LogWindow.Name = "LogWindow";
             this.LogWindow.ReadOnly = true;
+            // 
+            // PathShower
+            // 
+            resources.ApplyResources(this.PathShower, "PathShower");
+            this.PathShower.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.PathShower.Name = "PathShower";
             // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.Controls.Add(this.PathShower);
             this.Controls.Add(this.LogWindow);
             this.Controls.Add(this.AutoCorrectButton);
-            this.Controls.Add(this.FilePathLabel);
             this.Controls.Add(this.СhooseFileButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm";
@@ -84,9 +82,9 @@
         #endregion
 
         public System.Windows.Forms.Button СhooseFileButton;
-        public System.Windows.Forms.Label FilePathLabel;
         public System.Windows.Forms.Button AutoCorrectButton;
         public System.Windows.Forms.TextBox LogWindow;
+        public System.Windows.Forms.TextBox PathShower;
     }
 }
 

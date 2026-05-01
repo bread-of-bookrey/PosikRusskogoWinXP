@@ -12,11 +12,14 @@ namespace PoiskRusskogoXP.Controller
     {
         public string ChosenFilePath;
         public string ChosenFileText;
-        private LogManager logManager;
 
-        public FileSearcher(LogManager logManager)
+        private LogManager logManager;
+        private PathShowerManager pathShowerManager;
+
+        public FileSearcher(LogManager logManager, PathShowerManager pathShowerManager)
         {
             this.logManager = logManager;
+            this.pathShowerManager = pathShowerManager;
         }
 
 
@@ -30,6 +33,7 @@ namespace PoiskRusskogoXP.Controller
                 ChosenFileText = File.ReadAllText(dlg.FileName, enc);
                 ChosenFilePath = dlg.FileName;
 
+                pathShowerManager.UpdatePath(ChosenFilePath);
                 logManager.WriteMessage($"Анализ файла {ChosenFilePath}");
             }
         }

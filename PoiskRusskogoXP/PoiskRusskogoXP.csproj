@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Controller\FileSearcher.cs" />
     <Compile Include="Controller\LogManager.cs" />
+    <Compile Include="Controller\PathShowerManager.cs" />
     <Compile Include="View\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

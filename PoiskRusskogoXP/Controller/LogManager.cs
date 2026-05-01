@@ -20,7 +20,7 @@ namespace PoiskRusskogoXP.Controller
 
         public void WriteMessage(string message)
         {
-            logWindow.AppendText(message);
+            logWindow.AppendText(message + Environment.NewLine);
             logWindow.ScrollToCaret();
         }
 
