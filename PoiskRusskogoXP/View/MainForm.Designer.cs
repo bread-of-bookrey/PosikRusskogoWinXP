@@ -68,6 +68,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BackgroundImage = global::PoiskRusskogoXP.Properties.Resources.BG;
             this.Controls.Add(this.PathShower);
             this.Controls.Add(this.LogWindow);
             this.Controls.Add(this.AutoCorrectButton);

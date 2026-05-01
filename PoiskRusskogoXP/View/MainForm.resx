@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="СhooseFileButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 8</value>
+    <value>112, 12</value>
   </data>
   <data name="СhooseFileButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>255, 45</value>
@@ -144,7 +144,7 @@
     <value>3</value>
   </data>
   <data name="AutoCorrectButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 296</value>
+    <value>112, 296</value>
   </data>
   <data name="AutoCorrectButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>255, 45</value>
@@ -171,13 +171,13 @@
     <value>ГОСТ тип А, 12pt</value>
   </data>
   <data name="LogWindow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 97</value>
+    <value>12, 101</value>
   </data>
   <data name="LogWindow.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="LogWindow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 184</value>
+    <value>458, 184</value>
   </data>
   <data name="LogWindow.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -198,10 +198,10 @@
     <value>ГОСТ тип А, 12pt</value>
   </data>
   <data name="PathShower.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 59</value>
+    <value>12, 63</value>
   </data>
   <data name="PathShower.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 32</value>
+    <value>458, 32</value>
   </data>
   <data name="PathShower.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -225,7 +225,7 @@
     <value>14, 37</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>382, 353</value>
+    <value>482, 353</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>ГОСТ тип А, 18pt</value>
