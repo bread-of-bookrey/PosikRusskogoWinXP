@@ -13,7 +13,6 @@ namespace PoiskRusskogoXP.Controller
     {
         public string ChosenFilePath;
         public string[] ChosenFileText;
-        public Encoding ChosenFileEncodnig;
 
         private LogManager logManager;
         private PathShowerManager pathShowerManager;
@@ -33,16 +32,15 @@ namespace PoiskRusskogoXP.Controller
             dlg.Filter = "Текстовые файлы (*.txt, *.dmi, *.res)|*.txt;*.dmi;*.res";
             if (dlg.ShowDialog() == DialogResult.OK)
             {
-                Encoding ChosenFileEncoding = EncodingDetector.DetectFileEncoding(dlg.FileName);
 
-                ChosenFileText = File.ReadAllLines(dlg.FileName, ChosenFileEncoding);
+                ChosenFileText = File.ReadAllLines(dlg.FileName);
                 ChosenFilePath = dlg.FileName;
 
                 pathShowerManager.UpdatePath(ChosenFilePath);
                 logManager.WriteMessage($"Анализ файла {ChosenFilePath}");
-                logManager.WriteMessage($"Кодировка символов: {ChosenFileEncoding}");
 
-                rusCharAnal.Analize(ChosenFileText);
+                rusCharAnal.UpdatePath(ChosenFilePath);
+                rusCharAnal.Analize(ChosenFileText);            
             }
         }
     }

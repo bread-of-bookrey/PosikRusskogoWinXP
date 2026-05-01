@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller\EncodingDetector.cs" />
     <Compile Include="Controller\FileSearcher.cs" />
     <Compile Include="Controller\LogManager.cs" />
     <Compile Include="Controller\PathShowerManager.cs" />
