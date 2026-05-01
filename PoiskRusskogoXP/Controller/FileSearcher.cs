@@ -4,12 +4,21 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
+using System.Drawing;
 
 namespace PoiskRusskogoXP.Controller
 {
     class FileSearcher
     {
+        public string ChosenFilePath;
         public string ChosenFileText;
+        private LogManager logManager;
+
+        public FileSearcher(LogManager logManager)
+        {
+            this.logManager = logManager;
+        }
+
 
         public void GetChosenFileText(object sender, EventArgs e)
         {
@@ -19,6 +28,9 @@ namespace PoiskRusskogoXP.Controller
             {
                 Encoding enc = DetectEncoding(dlg.FileName);
                 ChosenFileText = File.ReadAllText(dlg.FileName, enc);
+                ChosenFilePath = dlg.FileName;
+
+                logManager.WriteMessage($"Анализ файла {ChosenFilePath}");
             }
         }
 

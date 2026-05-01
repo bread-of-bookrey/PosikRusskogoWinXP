@@ -19,5 +19,11 @@ namespace PoiskRusskogoXP
         {
 
         }
+
+        private void FilePathLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="СhooseFileButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 12</value>
+    <value>62, 8</value>
   </data>
   <data name="СhooseFileButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>255, 45</value>
@@ -144,10 +144,10 @@
     <value>3</value>
   </data>
   <data name="FilePathLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 64</value>
+    <value>12, 56</value>
   </data>
   <data name="FilePathLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>360, 37</value>
+    <value>360, 45</value>
   </data>
   <data name="FilePathLabel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -166,27 +166,6 @@
   </data>
   <data name="&gt;&gt;FilePathLabel.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="LabelLogWindow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 110</value>
-  </data>
-  <data name="LabelLogWindow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>361, 170</value>
-  </data>
-  <data name="LabelLogWindow.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;LabelLogWindow.Name" xml:space="preserve">
-    <value>LabelLogWindow</value>
-  </data>
-  <data name="&gt;&gt;LabelLogWindow.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LabelLogWindow.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;LabelLogWindow.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="AutoCorrectButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>62, 296</value>
@@ -210,6 +189,30 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;AutoCorrectButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="LogWindow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 104</value>
+  </data>
+  <data name="LogWindow.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LogWindow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 184</value>
+  </data>
+  <data name="LogWindow.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;LogWindow.Name" xml:space="preserve">
+    <value>LogWindow</value>
+  </data>
+  <data name="&gt;&gt;LogWindow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LogWindow.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LogWindow.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
