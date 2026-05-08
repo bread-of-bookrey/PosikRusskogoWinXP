@@ -47,7 +47,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>PoiskRusskogoICON.ico</ApplicationIcon>
+    <ApplicationIcon>TrueICON.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <NoWin32Manifest>true</NoWin32Manifest>
@@ -109,8 +109,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\BG.png" />
-    <Content Include="Assets\PoiskRusskogoICON.ico" />
-    <Content Include="PoiskRusskogoICON.ico" />
+    <Content Include="Assets\TrueICON.ico" />
+    <Content Include="TrueICON.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
